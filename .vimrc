@@ -136,9 +136,11 @@ endfunc
 
 autocmd BufWrite *.py :call DeleteTrailingWS()
 
-" Automatically start up NERDTree & start cursor in main window
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+" Automatically start up NERDTree & start cursor in main window & close upon
+" opening a new file
+" autocmd VimEnter * NERDTree
+" autocmd VimEnter * wincmd p
+" let NERDTreeQuitOnOpen=1
 
 " Ignore these files when completing
 set wildignore+=*.o,*.obj,.git,*.pyc
